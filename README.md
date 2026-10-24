@@ -1,12 +1,26 @@
 # Skeleton Writer
 
-A desktop writing app for prose, screenplays, and structured stories in the [openSkeleton format](https://github.com/brandflowr/openSkeleton).
+**Skeleton Writer is a desktop writing app designed for the [SKEL file format](https://github.com/brandflowr/openSkeleton).** Write prose and screenplays, organize your story, and save it as a structured `.skel` project.
 
 **[Download for Windows x64 — v0.1.0 preview](https://github.com/brandflowr/Skeleton-Writer/releases/download/v0.1.0/Skeleton_0.1.0_x64-setup.exe)** · [All downloads and release notes](https://github.com/brandflowr/Skeleton-Writer/releases/tag/v0.1.0)
 
 This preview is available free of charge. This repository contains downloads and user documentation; the desktop application source is maintained separately. The openSkeleton specification has its own repository and license.
 
 > **Unsigned preview:** These installers are not yet code-signed. Windows may show an unknown-publisher or SmartScreen warning. Some Windows security settings or managed computers may block installation. This is an early preview, not a certified final release.
+
+## Built for the SKEL file format
+
+**SKEL (Story Keyframe Extensible Layout)** is an open format for screenplays, storyboards, and visual narratives, defined in the [openSkeleton repository](https://github.com/brandflowr/openSkeleton). It keeps the writing and the structure of a story together in a file that people can read and software can validate.
+
+- **`.skel`** is the native YAML authoring format: a plain-text story document.
+- **`.skel.json`** is the JSON interchange form of the same data model.
+- **Acts, scenes, and shots** are stored as separate collections connected by IDs, so tools can work with the relationships between story elements.
+
+Skeleton Writer uses SKEL as its native project format. You can begin with prose or Fountain scene writing and develop the outline, characters, and locations around it; shots can stay empty while you write. Keep the `.skel` file as your full project when exporting to other writing formats.
+
+SKEL is also the native story format of Genlock Studio and is designed for use across compatible writing, storyboard, and production tools. Writer's current Genlock workflow limitations are documented in the [preview limitations](docs/preview-limitations.md).
+
+Explore the [format specification](https://github.com/brandflowr/openSkeleton/blob/main/spec/skel-spec.md), read an [annotated example `.skel` file](https://github.com/brandflowr/openSkeleton/blob/main/spec/example.skel), or visit [openSkeleton](https://github.com/brandflowr/openSkeleton) for schemas, reference tools, and documentation.
 
 ## Get started
 
